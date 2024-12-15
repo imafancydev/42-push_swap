@@ -9,18 +9,47 @@
 </div>
 
 <p align="center">
-	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/imafancydev/so_Long?color=lightblue" />
-	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/imafancydev/so_Long?color=critical" />
-	<img alt="Code language count" src="https://img.shields.io/github/languages/count/imafancydev/so_Long?color=yellow" />
-	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/imafancydev/so_Long?color=blue" />
-	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/imafancydev/so_Long?color=green" />
+	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/imafancydev/push_swap?color=lightblue" />
+	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/imafancydev/push_swap?color=critical" />
+	<img alt="Code language count" src="https://img.shields.io/github/languages/count/imafancydev/push_swap?color=yellow" />
+	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/imafancydev/push_swap?color=blue" />
+	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/imafancydev/push_swap?color=green" />
 </p>
 
-Welcome to the 42 So_Long project! This project is part of the curriculum at 42 and focuses on creating a 2D game using the MinilibX, a simple graphic library provided by 42. So_Long is a game where the player navigates through a map, collects items, and avoids obstacles to reach the goal.
+The **push_swap** project is a very simple and highly effective algorithm project: data will need to be sorted. You have at your disposal a set of int values, 2 stacks and a set of instructions to manipulate both stacks.
 
-<h2>Objective</h2>
-The objective of the So_Long project is to develop a fully functional game that incorporates various game elements, such as map rendering, player movement, collision detection, item collection, and win/lose conditions. By completing this project, you will enhance your understanding of game development concepts and gain practical experience in using the MinilibX library.
+This project contains 2 programs:
+- The first, named **checker** which takes integer arguments and reads instructions on the standard output. Once read,checker executes them and displays `OK` if integersare sorted. Otherwise, it will display `KO`.
+- The second one called **push_swap** which calculates and displays on the standard output the smallest progam using *push_swap instruction language* that sorts inte-ger arguments received.
 
-<h2>Features</h2>
-Map Rendering
-So_Long allows you to load and render game maps stored in a specific format, typically a file with a .ber extension. The map consists of different tiles representing walls, paths, collectible items, the player's starting position, and the exit. The MinilibX library provides functions to render graphical elements on the screen, enabling you to display the map with the appropriate textures and colors.
+## push_swap instructions
+
+- **sa**: *swap a* - swap the first 2 elements at the top of stack a. Do nothing if there is only one or no elements.
+- **sb**: *swap b* - swap the first 2 elements at the top of stack b. Do nothing if there is only one or no elements.
+- **ss**: sa and sb at the same time.
+- **pa**: *push a* - take the first element at the top of b and put it at the top of a. Do nothing if b is empty.
+- **pb**: *push b* - take the first element at the top of a and put it at the top of b. Do nothing if a is empty.
+- **ra**: *rotate a* - shift up all elements of stack a by 1. The first element becomes the last one.
+- **rb**: *rotate b* - shift up all elements of stack b by 1. The first element becomes the last one.
+- **rr**: ra and rb at the same time.
+- **rra**: *reverse rotate a* - shift down all elements of stack a by 1. The last element becomes the first one.
+- **rrb**: *reverse rotate b* - shift down all elements of stack b by 1. The last element becomes the first one.
+- **rrr**: rra and rrb at the same time.
+
+## Compilation
+
+Compile checker: `make checker`
+
+Compile push_swap: `make push_swap`
+
+Compile both: `make`
+
+## Execute
+
+checker: `./checker 0 2 3 1` then program's waiting for user input
+
+push_swap: `./push_swap 0 2 3 1`
+
+Note: You can also use debug option `-v` as first parameter to see stacks operations
+
+![alt text](https://github.com/ska42/push_swap/blob/main/img/option_debug_example.png?raw=true)
