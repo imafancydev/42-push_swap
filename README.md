@@ -4,7 +4,7 @@
 	📖 push_swap
 </h1>
 
-<a href="https://github.com/simon-zerisenay/42_So_Long">![42 Badge](https://github.com/mcombeau/mcombeau/blob/main/42_badges/push_swap.png)</a>
+<a href="https://github.com/simon-zerisenay/42_So_Long">![42 Badge](https://github.com/mcombeau/mcombeau/blob/main/42_badges/push_swapm.png)</a>
 
 </div>
 
